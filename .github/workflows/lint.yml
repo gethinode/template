@@ -1,4 +1,4 @@
-name: lint
+name: lint & build
 on:
   push:
     tags:
@@ -26,3 +26,4 @@ jobs:
         cache: 'npm'
     - run: npm ci --ignore-scripts
     - run: npm run lint
+    - run: npm run build
