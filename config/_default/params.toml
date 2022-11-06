@@ -49,8 +49,7 @@ schemaSection = "blog"
 
 [main]
     featurePhoto = "img/sunrise.jpg" # source: https://unsplash.com/photos/ZX6BPboJrYk
-    logo = "/logo_embedded.svg"
-
+    logo = "/img/logo_embedded.svg"
 
 [comments]
     enabled = false
