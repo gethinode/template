@@ -1,6 +1,6 @@
 {
   "name": "@markdumay/hugo-theme-hinode-child",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
@@ -39,13 +39,13 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@markdumay/hugo-theme-hinode": "^0.5.3",
+    "@markdumay/hugo-theme-hinode": "^0.5.4",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.2",
     "eslint": "^8.27.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.5.0",
+    "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-promise": "^6.1.1",
     "exec-bin": "^1.0.0",
     "flexsearch": "^0.7.31",
