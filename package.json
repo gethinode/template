@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/markdumay/hugo-theme-hinode#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@markdumay/hugo-theme-hinode": "^0.5.4",
     "autoprefixer": "^10.4.13",
