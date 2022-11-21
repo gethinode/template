@@ -42,7 +42,7 @@
     "@markdumay/hugo-theme-hinode": "^0.5.5",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.2",
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.5.1",
