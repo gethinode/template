@@ -41,7 +41,7 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@markdumay/hugo-theme-hinode": "^0.5.5",
     "autoprefixer": "^10.4.13",
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.2.3",
     "eslint": "^8.28.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
