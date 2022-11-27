@@ -8,6 +8,9 @@
 
 <!-- Badges -->
 <p align="center">
+    <a href="https://gohugo.io" alt="Hugo website">
+        <img src="https://img.shields.io/badge/generator-hugo-brightgreen" />
+    </a>
     <a href="https://github.com/markdumay/hugo-theme-hinode-child/commits/main" alt="Last commit">
         <img src="https://img.shields.io/github/last-commit/markdumay/hugo-theme-hinode-child.svg" />
     </a>
