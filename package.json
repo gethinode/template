@@ -1,6 +1,6 @@
 {
   "name": "@markdumay/hugo-theme-hinode-child",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@markdumay/hugo-theme-hinode": "^0.7.6",
+    "@markdumay/hugo-theme-hinode": "^0.7.7",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.3",
     "eslint": "^8.29.0",
