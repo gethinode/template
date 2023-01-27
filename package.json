@@ -1,6 +1,6 @@
 {
-  "name": "@markdumay/hugo-theme-hinode-child",
-  "version": "0.4.7",
+  "name": "@gethinode/child",
+  "version": "0.4.8",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
@@ -58,6 +58,6 @@
     "stylelint-config-standard-scss": "^6.1.0"
   },
   "otherDependencies": {
-    "hugo": "0.109.0"
+    "hugo": "0.110.0"
   }
 }
