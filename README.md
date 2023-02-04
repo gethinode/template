@@ -27,7 +27,7 @@
 
 ## About
 
-![Logo](https://raw.githubusercontent.com/markdumay/hugo-theme-hinode/main/static/img/logo.png)
+![Logo](https://raw.githubusercontent.com/gethinode/hinode/main/static/img/logo.png)
 
 Hinode is a clean blog theme for [Hugo][hugo], an open-source static site generator. Hinode is available as a [child theme][repository_child], and a [main theme][repository]. This repository contains the code base of the child theme. Visit the [main theme][repository] for installation instructions.
 
@@ -39,5 +39,5 @@ Hinode is a clean blog theme for [Hugo][hugo], an open-source static site genera
 [blog]: https://markdumay.com
 -->
 
-[repository]: https://github.com/markdumay/hugo-theme-hinode.git
+[repository]: https://github.com/gethinode/hinode.git
 [repository_child]: https://github.com/gethinode/child.git

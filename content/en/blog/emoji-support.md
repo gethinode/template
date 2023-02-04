@@ -2,9 +2,10 @@
 author: "Hugo Authors"
 title: "Emoji Support"
 date: 2021-07-15
-description: "Guide to emoji usage in Hugo"
+description: "Guide to emoji usage in Hugo."
 tags: ["emoji"]
-thumbnail: img/dunes.jpg # https://picsum.photos/id/184/4288/2848
+# thumbnail: img/dunes.jpg
+thumbnail: https://picsum.photos/id/184/4288/2848.jpg
 photoCredits: <a href="https://unsplash.com/@timdegroot">Tim de Groot</a>
 photoSource: <a href="https://unsplash.com/photos/yNGQ830uFB4">Unsplash</a>
 ---

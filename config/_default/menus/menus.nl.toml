@@ -1,6 +1,6 @@
 [[main]]
-  name = "About"
-  url = "/about/"
+  name = "Over mij"
+  url = "/over-mij/"
   weight = 10
 
 [[main]]
@@ -9,20 +9,20 @@
   weight = 20
 
 [[main]]
-  name = "Projects"
-  url = "/projects/"
+  name = "Projecten"
+  url = "/projecten/"
   weight = 30
 
 [[main]]
-  name = "Sample project"
-  url = "/en/projects/sample-project/"
-  parent = "Projects"
+  name = "Voorbeeldproject"
+  url = "/nl/projecten/voorbeeldproject/"
+  parent = "Projecten"
   weight = 1
 
 [[main]]
-  name = "Another project"
-  url = "/en/projects/another-project/"
-  parent = "Projects"
+  name = "Ander project"
+  url = "/nl/projecten/ander-project/"
+  parent = "Projecten"
   weight = 2
 
 [[main]]
