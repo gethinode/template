@@ -1,0 +1,71 @@
+[build]
+    publish = "public"
+    functions = "functions"
+
+[build.environment]
+    NODE_VERSION = "18.13.0"
+    NPM_VERSION = "8.19.3"
+
+[context.production]
+    command = "npm run build"
+
+[context.production.environment]
+    HUGO_VERSION = "0.110.0"
+    HUGO_ENV = "production"
+    HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+        X-Content-Type-Options = "nosniff"
+        X-XSS-Protection = "1; mode=block"
+        Content-Security-Policy = """\
+            default-src 'self'; \
+            script-src 'self' \
+                https://utteranc.es/client.js; \
+            style-src 'self' https://utteranc.es https://fonts.googleapis.com https://www.youtube.com; \
+            object-src 'none'; \
+            base-uri 'self'; \
+            connect-src 'self'; \
+            font-src 'self' https://fonts.gstatic.com; \
+            frame-src 'self' https://utteranc.es https://www.youtube-nocookie.com https://www.youtube.com; \
+            img-src 'self' https://i.vimeocdn.com https://i.ytimg.com; \
+            manifest-src 'self'; \
+            media-src 'self' \
+            """
+        X-Frame-Options = "SAMEORIGIN"
+        Referrer-Policy = "strict-origin"
+        Permissions-Policy = """\
+            geolocation=(), \
+            midi=(), \
+            sync-xhr=(), \
+            microphone=(), \
+            camera=(), \
+            magnetometer=(), \
+            gyroscope=(), \
+            fullscreen=(), \
+            payment=() \
+            """
+        Cache-Control = "public, max-age=31536000"
+        Access-Control-Allow-Origin = "*"
+
+[context.deploy-preview]
+    command = "npm run build -- -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+    command = "npm run build -- -b $DEPLOY_PRIME_URL"
+
+[context.next]
+    command = "npm run build"
+
+[context.next.environment]
+    HUGO_ENV = "next"
+
+[dev]
+    framework = "#custom"
+    command = "npm run start"
+    targetPort = 1313
+    port = 8888
+    publish = "public"
+    autoLaunch = false

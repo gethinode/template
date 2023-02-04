@@ -1,17 +1,19 @@
 ---
 author: "Mark Dumay"
-title: "Code Highlighting"
+slug: "code-markeren"
+title: "Code markeren"
 date: 2022-04-16
-description: "Examples on how to enable code highlighting."
+description: "Voorbeelden om de syntax van een taal te markeren."
 tags: ["code"]
 thumbnail: img/notepad.jpg
 photoCredits: <a href="https://unsplash.com/@frederickjmedina">Frederick Medina</a>
+# credits: Photo by <a href="https://unsplash.com/@frederickjmedina">Frederick Medina</a> on <a href="https://unsplash.com/photos/PdfRE-xB--s">Unsplash</a>
 photoSource: <a href="https://unsplash.com/photos/PdfRE-xB--s">Unsplash</a>
 ---
 
 ## Code Fencing
 
-Use code fencing to highlight the syntax of a specific language.
+Gebruik code fencing om de syntax voor een specifieke taal te markeren.
 
 ```json
 {
@@ -32,7 +34,7 @@ Use code fencing to highlight the syntax of a specific language.
 
 ## Highlight Shortcode
 
-Use the `highlight` shortcode to customize the layout of a specific code block.
+Gebruik de `highlight` shortcode om de lay-out van een taalfragment aan te passen.
 
 {{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
 // GetTitleFunc returns a func that can be used to transform a string to
