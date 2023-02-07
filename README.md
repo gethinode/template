@@ -1,4 +1,4 @@
-# Hugo Child Theme Hinode
+# Hinode - Child Theme
 
 <!-- Tagline -->
 <p align="center">
@@ -10,6 +10,12 @@
 <p align="center">
     <a href="https://gohugo.io" alt="Hugo website">
         <img src="https://img.shields.io/badge/generator-hugo-brightgreen" />
+    </a>
+    <a href="https://app.netlify.com/sites/gethinode-child/deploys" alt="Netlify Status">
+        <img src="https://img.shields.io/netlify/bbe29d40-f246-44fc-ac33-3c48e4776a11" />
+    </a>
+    <a href="https://stats.uptimerobot.com/xyGVYhLJmV" alt="UptimeRobot Status">
+        <img src="https://img.shields.io/uptimerobot/status/m793642596-ec67b9245f33e4f365f0da66" />
     </a>
     <a href="https://github.com/gethinode/child/commits/main" alt="Last commit">
         <img src="https://img.shields.io/github/last-commit/gethinode/child.svg" />
