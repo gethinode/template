@@ -1,6 +1,7 @@
 [main]
     separator = "-"
     description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
+    enableDarkMode = true
 
 [docs]
     version = "0.8"
@@ -11,8 +12,8 @@
     fullCover = false
 
 [navigation]
-    logo = "/img/logo_embedded.svg"
-    color = "white"
+    logo = "/img/logo_icon.svg"
+    color = "body"
     style = "light"
     fixed = true
     offset = "4em"
