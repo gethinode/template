@@ -53,7 +53,7 @@
     "purgecss-whitelister": "^2.4.0",
     "shx": "^0.3.4",
     "stylelint": "^15.1.0",
-    "stylelint-config-standard-scss": "^7.0.0"
+    "stylelint-config-standard-scss": "^7.0.1"
   },
   "hugo-bin": {
     "buildTags": "extended"
