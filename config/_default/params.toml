@@ -4,7 +4,8 @@
     enableDarkMode = true
 
 [docs]
-    version = "0.8"
+    version = "0.9"
+    basePath = "node_modules/@gethinode/hinode"
 
 [home]
     sections = ["blog", "projects"]
