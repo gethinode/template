@@ -1,26 +1,27 @@
 {
   "name": "@gethinode/child",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
     "init": "shx rm -rf .git && git init -b main",
-    "create": "hugo new",
+    "create": "exec-bin node_modules/.bin/hugo/hugo new",
     "prestart": "npm run clean",
-    "start": "hugo server --bind=0.0.0.0 --disableFastRender",
+    "start": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender",
     "prebuild": "npm run clean",
-    "build": "hugo --gc --minify",
+    "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
     "build:preview": "npm run build -D -F",
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",
     "lint": "npm run -s lint:markdown",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
-    "server": "hugo server",
+    "server": "exec-bin node_modules/.bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
     "precheck": "npm version",
-    "check": "hugo version",
+    "check": "exec-bin node_modules/.bin/hugo/hugo version",
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
     "upgrade": "npx npm-check-updates -u",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
@@ -37,7 +38,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@gethinode/hinode": "^0.9.0-beta2",
+    "@gethinode/hinode": "^0.9.0",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.3.0-alpha1",
     "eslint": "^8.34.0",
@@ -45,8 +46,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
+    "exec-bin": "^1.0.0",
     "flexsearch": "^0.7.31",
-    "hugo-bin": "^0.98.0",
     "hugo-installer": "^4.0.1",
     "markdownlint-cli2": "^0.6.0",
     "postcss-cli": "^10.1.0",
@@ -55,7 +56,7 @@
     "stylelint": "^15.1.0",
     "stylelint-config-standard-scss": "^7.0.1"
   },
-  "hugo-bin": {
-    "buildTags": "extended"
+  "otherDependencies": {
+    "hugo": "0.110.0"
   }
 }
