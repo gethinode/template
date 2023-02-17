@@ -1,7 +1,7 @@
 ---
 author: "Mark Dumay"
 title: "Child Theme"
-date: 2023-01-27
+date: 2023-02-17
 description: "The Hinode child theme ensures your site uses future Hinode updates."
 tags: ["theme"]
 thumbnail: img/forest.jpg
