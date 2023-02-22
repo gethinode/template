@@ -64,7 +64,7 @@
     dark = "#212529"
     themeOpacity = "10"
     themeFont = "Inter"
-    themeFontPath = "/fonts" # local path
+    themeFontPath = "/fonts"
 
 [schema]
     type = "Organization"
