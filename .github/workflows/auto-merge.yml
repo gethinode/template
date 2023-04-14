@@ -1,6 +1,6 @@
 # Source: https://nicolasiensen.github.io/2022-07-23-automating-dependency-updates-with-dependabot-github-auto-merge-and-github-actions/
 name: Dependabot auto-merge
-on: pull_request
+on: pull_request_target
 
 permissions:
   pull-requests: write
@@ -9,7 +9,7 @@ permissions:
 jobs:
   review-dependabot-pr:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
+    if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
       - name: Dependabot metadata
         id: metadata
