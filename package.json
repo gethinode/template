@@ -37,22 +37,22 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@gethinode/hinode": "^0.11.5",
+    "@gethinode/hinode": "^0.12.0",
     "autoprefixer": "^10.4.14",
     "bootstrap": "^5.3.0-alpha3",
-    "eslint": "^8.38.0",
+    "eslint": "^8.39.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "flexsearch": "^0.7.31",
     "hugo-bin": "^0.102.0",
-    "markdownlint-cli2": "^0.6.0",
+    "markdownlint-cli2": "^0.7.0",
     "postcss-cli": "^10.1.0",
     "purgecss-whitelister": "^2.4.0",
     "shx": "^0.3.4",
-    "stylelint": "^15.4.0",
-    "stylelint-config-standard-scss": "^7.0.1"
+    "stylelint": "^15.6.0",
+    "stylelint-config-standard-scss": "^9.0.0"
   },
   "hugo-bin": {
     "buildTags": "extended"
