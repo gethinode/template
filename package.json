@@ -40,7 +40,7 @@
     "@gethinode/hinode": "^0.12.7",
     "autoprefixer": "^10.4.14",
     "bootstrap": "^5.3.0-alpha3",
-    "eslint": "^8.39.0",
+    "eslint": "^8.40.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
