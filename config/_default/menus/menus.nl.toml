@@ -15,13 +15,13 @@
 
 [[main]]
   name = "Voorbeeldproject"
-  url = "/nl/projecten/voorbeeldproject/"
+  url = "/projecten/voorbeeldproject/"
   parent = "Projecten"
   weight = 1
 
 [[main]]
   name = "Ander project"
-  url = "/nl/projecten/ander-project/"
+  url = "/projecten/ander-project/"
   parent = "Projecten"
   weight = 2
 
@@ -60,12 +60,12 @@
 
 [[sample]]
   name = "Voorbeeldproject"
-  url = "/nl/projecten/voorbeeldproject/"
+  url = "/projecten/voorbeeldproject/"
   parent = "Projecten"
   weight = 1
 
 [[sample]]
   name = "Ander project"
-  url = "/nl/projecten/ander-project/"
+  url = "/projecten/ander-project/"
   parent = "Projecten"
   weight = 2
