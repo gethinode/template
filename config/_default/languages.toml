@@ -7,10 +7,10 @@
     [en.params.feature]
         message = "Welcome to Hinode!"
         tagline = "A clean documentation and blog theme for your Hugo site based on Bootstrap 5."
-        link = "/en/about"
+        link = "/about"
         caption = "About"
     [en.params.footer]
-        license = "Licensed under Creative Commons (<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='link-secondary' target='_blank'>CC BY-NC-SA 4.0</a>)."
+        license = "Licensed under Creative Commons (<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='link-secondary' target='_blank' rel='noopener noreferrer'>CC BY-NC-SA 4.0</a>)."
         socialTitle = "Follow me"
         socialCaption = "I work on everything coding and tweet developer memes"
 
@@ -23,9 +23,9 @@
     [nl.params.feature]
         message = "Welkom bij Hinode!"
         tagline = "Een documentatie en blog thema voor Hugo gebaseerd op Bootstrap 5."
-        link = "/nl/over-mij"
+        link = "/over-mij"
         caption = "Over mij"
     [nl.params.footer]
-        license = "Gelicenseerd onder Creative Commons (<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='link-secondary' target='_blank'>CC BY-NC-SA 4.0</a>)."
+        license = "Gelicenseerd onder Creative Commons (<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' class='link-secondary' target='_blank' rel='noopener noreferrer'>CC BY-NC-SA 4.0</a>)."
         socialTitle = "Volg mij"
         socialCaption = "Ik doe aan programmeren en tweet memes"
