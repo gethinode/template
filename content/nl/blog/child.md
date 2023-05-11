@@ -1,6 +1,7 @@
 ---
 author: "Mark Dumay"
 title: "Child Theme"
+slug: "child-theme"
 date: 2023-02-17
 description: "Het Hinode child theme zorgt er voor dat je site gebruik maakt van de laatste Hinode versie."
 tags: ["theme"]
