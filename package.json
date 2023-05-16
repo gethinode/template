@@ -46,7 +46,7 @@
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "flexsearch": "^0.7.31",
-    "hugo-bin": "^0.102.0",
+    "hugo-bin": "^0.102.1",
     "markdownlint-cli2": "^0.7.1",
     "postcss-cli": "^10.1.0",
     "purgecss-whitelister": "^2.4.0",
