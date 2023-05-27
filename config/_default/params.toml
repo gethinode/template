@@ -24,6 +24,9 @@
     toc = true
     sidebar = true
 
+[messages]
+    placement = "bottom-right"
+
 [sharing]
     enabled = true
     sort = "weight"
