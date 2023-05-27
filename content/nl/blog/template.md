@@ -1,7 +1,6 @@
 ---
 author: "Mark Dumay"
 title: "Template"
-slug: "template"
 date: 2023-02-17
 description: "De Hinode template zorgt er voor dat je site gebruik maakt van de laatste Hinode versie."
 tags: ["theme"]
