@@ -1,6 +1,6 @@
 {
-  "name": "@gethinode/child",
-  "version": "0.8.4",
+  "name": "@gethinode/template",
+  "version": "0.8.5",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gethinode/child.git"
+    "url": "git+https://github.com/gethinode/template.git"
   },
   "author": "",
   "license": "MIT",
