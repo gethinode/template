@@ -20,6 +20,10 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
+# uncomment to enable Google Analytics
+# See https://gethinode.com/docs/configuration/analytics/
+# googleAnalytics = "G-xxxxxxxxxx"
+
 [taxonomies]
   tag = 'tags'
 
