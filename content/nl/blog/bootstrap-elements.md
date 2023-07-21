@@ -169,7 +169,7 @@ echo "goodbye"
 
 Gebruik de volgende shortcode om de inhoud van een `toml` of `scss` bestand te tonen.
 
-{{< docs name="theme-colors" file="config/_default/params.toml" >}}
+{{< docs name="theme-colors" file="./_vendor/github.com/gethinode/hinode/config/_default/params.toml" full="false">}}
 
 ## Icon
 
