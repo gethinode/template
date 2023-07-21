@@ -1,7 +1,7 @@
 ---
 author: Mark Dumay
 title: Bootstrap elements
-date: 2023-02-17
+date: 2023-05-20
 description: Use shortcodes to add common Bootstrap elements with ease.
 tags: ["bootstrap", "shortcode"]
 thumbnail: img/boots.jpg
@@ -73,7 +73,7 @@ As an example, the following shortcode displays a tooltip for a dark button with
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* button color="secondary" tooltip="Click on the inbox to view your unread messages" href="#" badge="99+" */>}}
+{{</* button color="secondary" tooltip="Click on the inbox to view your unread messages" href="#!" badge="99+" */>}}
     Inbox
 {{</* /button */>}}
 {{< /example>}}
@@ -86,20 +86,20 @@ As an example, the following shortcode displays a group of three buttons.
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
 {{</* button-group aria-label="Basic example" */>}}
-  {{</* button color="primary" href="#" */>}}Left{{</* /button */>}}
-  {{</* button color="primary" href="#" */>}}Middle{{</* /button */>}}
-  {{</* button color="primary" href="#" */>}}Right{{</* /button */>}}
+  {{</* button color="primary" href="#!" */>}}Left{{</* /button */>}}
+  {{</* button color="primary" href="#!" */>}}Middle{{</* /button */>}}
+  {{</* button color="primary" href="#!" */>}}Right{{</* /button */>}}
 {{</* /button-group */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
 ## Card
 
-As an example, the following shortcode displays a stacked card with icon that links to the [about]({{< ref "about" >}}) page. It includes a custom header.
+As an example, the following shortcode displays a stacked card that links to the [about]({{< ref "about" >}}) page. It includes a custom header.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* card path="about" padding="3" class="w-50" color="light" header="publication" footer="none" */>}}
+{{</* card path="about" padding="3" class="w-50" color="body-tertiary" header="publication" footer="none" */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
@@ -127,7 +127,7 @@ As an example, the following shortcode displays a button that, when clicked, tri
     Trigger panel
 {{</* /button */>}}
 
-{{</* collapse id="collapse-1" class="p-3 border rounded" */>}}
+{{</* collapse id="collapse-1" class="p-3 border rounded bg-primary-subtle" */>}}
     Some placeholder content for the collapse component. This panel is <i>hidden by default</i> but
     revealed when the user activates the relevant trigger.
 {{</* /collapse */>}}
@@ -166,7 +166,7 @@ echo "goodbye"
 
 ## Docs
 
-Use the `docs` shortcode to display the content of a `toml` or `scss` file:
+Use the `docs` shortcode to display the content of a `js`, `scss` or `toml` file:
 
 {{< docs name="theme-colors" file="config/_default/params.toml" >}}
 
@@ -192,13 +192,44 @@ As an example, the following shortcode displays an image with rounded corners an
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
+## Nav
+
+As an example, the following shortcode displays a tab group with vertically aligned pills.
+
+<!-- markdownlint-disable MD037 -->
+{{< example lang="hugo" >}}
+  {{</* nav type="pills" vertical="true" */>}}
+    {{</* nav-item header="Nav Item #1" show="true" */>}}
+      This is the first item's nav body. It supports HTML content. The item is shown by adding the value
+      <code>show</code> to the <code>class</code> argument.
+    {{</* /nav-item */>}}
+    {{</* nav-item header="Nav Item #2" */>}}
+      This is the second item's nav body. It too supports HTML content.
+    {{</* /nav-item */>}}
+    {{</* nav-item header="Nav Item #3" */>}}
+      This is the third item's nav body.
+    {{</* /nav-item */>}}
+  {{</* /nav */>}}
+{{< /example >}}
+<!-- markdownlint-enable MD037 -->
+
 ## Navbar
 
 As an example, the following shortcode displays a light navigation header.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* navbar path="about" color="primary" size="sm" search="false" menus="sample" title="Brand" */>}}
+{{</* navbar path="about" color="primary" size="md" search="false" menus="sample" title="Brand" mode="false" */>}}
+{{< /example >}}
+<!-- markdownlint-enable MD037 -->
+
+## Release
+
+As an example, the following shortcode displays a default release button.
+
+<!-- markdownlint-disable MD037 -->
+{{< example lang="hugo" >}}
+{{</* release version="v0.14.1" */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
@@ -214,18 +245,36 @@ Loading...
 {{< /example>}}
 <!-- markdownlint-enable MD037 -->
 
+## Timeline
+
+As an example, the following shortcode displays a timeline with the file `data/timeline-en.yml` as data.
+
+<!-- markdownlint-disable MD037 -->
+{{< example lang="hugo" >}}
+{{</* timeline data="timeline-en" background="dark" */>}}
+{{< /example >}}
+<!-- markdownlint-enable MD037 -->
+
 ## Toast
 
 As an example, the following shortcode displays a button that, when clicked, triggers the toast message.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* button id="toastButton" */>}}
-    Show toast
+{{</* button toast="toast-example-1" */>}}
+    Show toast 1
 {{</* /button */>}}
 
-{{</* toast header="Custom title" */>}}
-    This is a toast message.
+{{</* button toast="toast-example-2" */>}}
+    Show toast 2
+{{</* /button */>}}
+
+{{</* toast id="toast-example-1" header="First title" */>}}
+    This is the first toast message.
+{{</* /toast */>}}
+
+{{</* toast id="toast-example-2" header="Second title" */>}}
+    This is the second toast message.
 {{</* /toast */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
@@ -236,8 +285,6 @@ As an example, the following shortcode displays a tooltip for a colored hyperlin
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* tooltip color="primary" title="Tooltip" href="#" */>}}
-    Tooltip demonstration
-{{</* /tooltip */>}}
+{{</* tooltip color="primary" title="Tooltip" href="#!" */>}}Tooltip{{</* /tooltip */>}} demonstration
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->

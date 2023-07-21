@@ -1,7 +1,7 @@
 ---
 author: Mark Dumay
 title: Bootstrap elementen
-slug: "bootstrap-elementen"
+slug: bootstrap-elementen
 date: 2023-02-17
 description: Gebruik shortcodes om eenvoudig Bootstrap elementen toe te voegen.
 tags: ["bootstrap", "shortcode"]
@@ -74,7 +74,7 @@ De volgende shortcode toont een knop met een label en een aanwijzing.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* button color="secondary" tooltip="Toon je ongelezen berichten" href="#" badge="99+" */>}}
+{{</* button color="secondary" tooltip="Toon je ongelezen berichten" href="#!" badge="99+" */>}}
     Inbox
 {{</* /button */>}}
 {{< /example>}}
@@ -87,20 +87,20 @@ De volgende shortcode toont een groep van drie knoppen.
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
 {{</* button-group aria-label="Basic example" */>}}
-  {{</* button color="primary" href="#" */>}}Links{{</* /button */>}}
-  {{</* button color="primary" href="#" */>}}Midden{{</* /button */>}}
-  {{</* button color="primary" href="#" */>}}Rechts{{</* /button */>}}
+  {{</* button color="primary" href="#!" */>}}Links{{</* /button */>}}
+  {{</* button color="primary" href="#!" */>}}Midden{{</* /button */>}}
+  {{</* button color="primary" href="#!" */>}}Rechts{{</* /button */>}}
 {{</* /button-group */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
 ## Card
 
-De volgende shortcode toont een kaart met een icoon dat linkt naar de [over mij]({{< ref "about" >}}) pagina. De kaart bevat een titel.
+De volgende shortcode toont een kaart dat linkt naar de [over mij]({{< ref "about" >}}) pagina. De kaart bevat een titel.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* card path="about" padding="3" class="w-50" color="light" header="publication" footer="none" */>}}
+{{</* card path="about" padding="3" class="w-50" color="body-tertiary" header="publication" footer="none" */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
@@ -193,13 +193,44 @@ De volgende shortcode toont een plaatje met afgeronde hoeken en een 21x9 verhoud
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
+## Nav
+
+De volgende shortcode toont een groep met verticale tabbladen.
+
+<!-- markdownlint-disable MD037 -->
+{{< example lang="hugo" >}}
+  {{</* nav type="pills" vertical="true" */>}}
+    {{</* nav-item header="Nav Item #1" show="true" */>}}
+    Dit is de inhoud van het eerste element met ondersteuning voor HTML. De waarde <code>show</code>
+    voor het argument <code>class</code> geeft aan dat het element uitgeklapt moet worden.
+    {{</* /nav-item */>}}
+    {{</* nav-item header="Nav Item #2" */>}}
+    Dit is de inhoud van het tweede element. Het ondersteunt ook HTML.
+    {{</* /nav-item */>}}
+    {{</* nav-item header="Nav Item #3" */>}}
+    Dit is de inhoud van het derde element.
+    {{</* /nav-item */>}}
+  {{</* /nav */>}}
+{{< /example >}}
+<!-- markdownlint-enable MD037 -->
+
 ## Navbar
 
 De volgende shortcode toont een navigatiemenu.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* navbar path="about" color="primary" size="sm" search="false" menus="sample" title="Brand" */>}}
+{{</* navbar path="about" color="primary" size="md" search="false" menus="sample" title="Brand" mode="false" */>}}
+{{< /example >}}
+<!-- markdownlint-enable MD037 -->
+
+## Release
+
+De volgende shortcode toont een knop voor een nieuwe release.
+
+<!-- markdownlint-disable MD037 -->
+{{< example lang="hugo" >}}
+{{</* release version="v0.14.1" */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
 
@@ -215,18 +246,36 @@ Loading...
 {{< /example>}}
 <!-- markdownlint-enable MD037 -->
 
+## Timeline
+
+De volgende shortcode toont een tijdslijn met het bestand `data/timeline-nl.yml` als input.
+
+<!-- markdownlint-disable MD037 -->
+{{< example lang="hugo" >}}
+{{</* timeline data="timeline-nl" */>}}
+{{< /example >}}
+<!-- markdownlint-enable MD037 -->
+
 ## Toast
 
 De volgende shortcode toont een knop die een bericht laat verschijnen op het scherm.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* button id="toastButton" */>}}
-    Toon bericht
+{{</* button toast="toast-example-1" */>}}
+    Toon bericht 1
 {{</* /button */>}}
 
-{{</* toast header="Titel" */>}}
-    Dit is een bericht.
+{{</* button toast="toast-example-2" */>}}
+    Toon bericht 2
+{{</* /button */>}}
+
+{{</* toast id="toast-example-1" header="Eerste titel" */>}}
+    Dit is het eerste bericht.
+{{</* /toast */>}}
+
+{{</* toast id="toast-example-2" header="Tweede titel" */>}}
+    Dit is het tweede bericht.
 {{</* /toast */>}}
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
@@ -237,8 +286,6 @@ De volgende shortcode toont een uitleg voor een gekleurde link.
 
 <!-- markdownlint-disable MD037 -->
 {{< example lang="hugo" >}}
-{{</* tooltip color="primary" title="Tooltip" href="#" */>}}
-    Tooltip demonstration
-{{</* /tooltip */>}}
+{{</* tooltip color="primary" title="Tooltip" href="#!" */>}}Tooltip{{</* /tooltip */>}} demonstratie
 {{< /example >}}
 <!-- markdownlint-enable MD037 -->
