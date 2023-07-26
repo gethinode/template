@@ -7,8 +7,8 @@
     "prestart": "npm run clean && npm run mod:vendor",
     "start": "hugo server --bind=0.0.0.0 --disableFastRender",
     "start:prod": "hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings -e production",
-    "prebuild": "npm run clean",
-    "build": "npm run -s mod:update && hugo --gc --minify",
+    "prebuild": "npm run clean && npm run -s mod:install",
+    "build": "hugo --gc --minify",
     "build:debug": "npm run -s mod:update && hugo -e debug --debug",
     "build:preview": "npm run build -D -F",
     "clean": "rimraf public resources",
@@ -19,6 +19,7 @@
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
     "mod:clean": "hugo mod clean",
+    "mod:install": "hugo mod get ./... && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:update": "hugo mod get -u ./... && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:tidy": "hugo mod tidy",
     "mod:vendor": "rimraf _vendor && hugo mod vendor",
@@ -26,7 +27,7 @@
     "env": "hugo env",
     "precheck": "npm version",
     "check": "hugo version",
-    "upgrade": "npx npm-check-updates -u"
+    "upgrade": "npx npm-check-updates -u && npm run -s mod:update"
   },
   "repository": {
     "type": "git",
