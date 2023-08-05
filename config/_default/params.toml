@@ -15,7 +15,7 @@
 
 [docs]
     version = "0.9"
-    basePath = "node_modules/@gethinode/hinode"
+    basePath = "_vendor/github.com/gethinode/hinode"
 
 [home]
     sections = ["blog", "projects"]
