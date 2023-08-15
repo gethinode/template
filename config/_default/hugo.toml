@@ -4,26 +4,39 @@ paginate = 9
 enableGitInfo = true
 
 # additional settings
-baseURL = "https://template.gethinode.com/"
+# googleAnalytics = "G-xxxxxxxxxx"
+baseURL = "https://example.com/"
 canonifyURLs = false
 enableEmoji = true
 enableRobotsTXT = true
 enableInlineShortcodes = true
+summaryLength = 20
 
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
 
-timeout = "120s"
+timeout = "180s"
 
 languageCode = "en-us"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
-# uncomment to enable Google Analytics
-# See https://gethinode.com/docs/configuration/analytics/
-# googleAnalytics = "G-xxxxxxxxxx"
+[outputFormats.REDIR]
+mediaType = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
 
+[mediaTypes."text/netlify"]
+delimiter = ""
+
+[outputs]
+home = ["HTML", "RSS", "REDIR"]
+
+[build]
+  writeStats = true
+  
 [taxonomies]
   tag = 'tags'
 
@@ -72,6 +85,9 @@ defaultContentLanguageInSubdir = true
     source = "assets"
     target = "assets"
   [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
     source = "i18n"
     target = "i18n"
   [[module.mounts]]
@@ -81,7 +97,7 @@ defaultContentLanguageInSubdir = true
     source = "static"
     target = "static"
   [[module.mounts]]
-    source = "static/fonts"
-    target = "static/fonts"
+    source = "netlify.toml"
+    target = "assets/config/netlify.toml"
   [[module.imports]]
     path = "github.com/gethinode/hinode"
