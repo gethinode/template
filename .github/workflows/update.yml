@@ -42,6 +42,6 @@ jobs:
           title: 'Update Hugo module dependencies'
           body: ${{ steps.vars.outputs.pr_body }}
           labels: dependencies
-          add-paths: |
-            **/go.mod
-            **/go.sum
+          # add-paths: |
+          #  **/go.mod
+          #  **/go.sum
