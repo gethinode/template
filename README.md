@@ -35,15 +35,42 @@
 
 ![Logo](https://raw.githubusercontent.com/gethinode/hinode/main/static/img/logo.png)
 
-Hinode is a clean blog theme for [Hugo][hugo], an open-source static site generator. Hinode is available as a [template][repository_template], and a [main theme][repository]. This repository contains the code base of the template. Visit the [main theme][repository] for installation instructions.
+Hinode is a clean blog theme for [Hugo][hugo], an open-source static site generator. Use this template if you would like to **take advantage of automation features**, provided by npm and GitHub actions. Visit the [docs][docs] for an alternative installation that uses Hugo only.
 
-<!-- MARKDOWN PUBLIC LINKS -->
+## Prerequisites
+
+Hinode is a theme that uses [Hugo modules][hugo_modules] to install and maintain various components. The Hinode template requires the following software to be installed on your local machine. The Hugo binary itself is embedded as an npm binary.
+
+- [Git][git_download]
+- [Go binary][golang_download]
+- [Node.js][nodejs] (it includes npm)
+
+## Installation
+
+1. **Create a new repository**
+
+    Click the button `Use this template` to initialize a new repository based on this template (log in to GitHub if needed).
+
+2. **Clone a local copy**
+
+    ```bash
+    git clone https://github.com/owner/my-hinode-site && cd my-hinode-site # replace "owner/my-hinode-site"
+    ```
+
+3. **Install the npm packages and hugo modules**
+    ```bash
+    npm install && npm run mod:update
+    ```
+
+You can now run `npm run start` to start a local development server.
+
+<!-- MARKDOWN LINKS -->
+[docs]: https://gethinode.com/docs
+[git_download]: https://git-scm.com
+[golang_download]: https://go.dev/dl/
 [hugo]: https://gohugo.io
-
-<!-- MARKDOWN MAINTAINED LINKS -->
-<!-- TODO: add blog link
-[blog]: https://markdumay.com
--->
-
+[hugo_modules]: https://gohugo.io/hugo-modules/
+[npm]: https://www.npmjs.com
+[nodejs]: https://nodejs.org
 [repository]: https://github.com/gethinode/hinode.git
 [repository_template]: https://github.com/gethinode/template.git
