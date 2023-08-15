@@ -58,6 +58,7 @@ Hinode is a theme that uses [Hugo modules][hugo_modules] to install and maintain
     ```
 
 3. **Install the npm packages and hugo modules**
+
     ```bash
     npm install && npm run mod:update
     ```
