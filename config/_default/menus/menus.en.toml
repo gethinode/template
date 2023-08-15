@@ -1,34 +1,12 @@
 [[main]]
-  name = "About"
-  url = "/about/"
+  name = "Home"
+  pageRef = "/"
   weight = 10
 
 [[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20
-
-[[main]]
-  name = "Projects"
-  url = "/projects/"
-  weight = 30
-
-[[main]]
-  name = "Sample project"
-  url = "/projects/sample-project/"
-  parent = "Projects"
-  weight = 1
-
-[[main]]
-  name = "Another project"
-  url = "/projects/another-project/"
-  parent = "Projects"
-  weight = 2
-
-[[main]]
   name = "Tags"
-  url = "/tags/"
-  weight = 40
+  pageRef = "/tags"
+  weight = 20
 
 [[social]]
   name = "LinkedIn"
@@ -48,24 +26,26 @@
   url = "https://medium.com/"
   weight = 30
 
+# toml-docs-start sample-navigation
 [[sample]]
   name = "Blog"
-  url = "/blog/"
+  pageRef = "/blog/"
   weight = 10
 
 [[sample]]
   name = "Projects"
-  url = "/projects/"
+  pageRef = "/projects/"
   weight = 20
 
 [[sample]]
   name = "Sample project"
-  url = "/projects/sample-project/"
+  pageRef = "/projects/sample-project/"
   parent = "Projects"
   weight = 1
 
 [[sample]]
   name = "Another project"
-  url = "/projects/another-project/"
+  pageRef = "/projects/another-project/"
   parent = "Projects"
   weight = 2
+# toml-docs-end sample-navigation

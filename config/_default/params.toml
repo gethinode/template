@@ -2,35 +2,46 @@
     separator = "-"
     description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
     enableDarkMode = true
+    modes = ["light", "dark"]
+    canonifyAssetsURLs = false
+    endorse = true
+    [main.externalLinks]
+        cue = false
+        tab = false
 
 [modules]
     core = ["bootstrap", "flexsearch", "fontawesome"]
     optional = ["leaflet", "katex"]
     excludeSCSS = ["bootstrap"]
     disableTemplate = ["katex"]
+    [modules.fontawesome]
+        inline = true
+        debug = true
+        skipMissing = false
 
 [debugging]
     showJS = false
     showSCSS = false
 
 [docs]
-    version = "0.9"
-    basePath = "_vendor/github.com/gethinode/hinode"
+    github = "https://github.com/gethinode/hinode"
+    release = "https://github.com/gethinode/hinode/releases/tag/"
+    checkVersion = false
 
 [home]
-    sections = ["blog", "projects"]
-    featurePhoto = "/img/sunrise.jpg" # source: https://unsplash.com/photos/ZX6BPboJrYk
+    # sections = ["posts"]
     fullCover = false
+    centerHeadline = false
+    style = ""
 
 [navigation]
     anchor = true
     logo = "/img/logo_icon.svg"
     color = "body"
-    style = "light"
     fixed = true
     offset = "3.8em"
     search = true
-    breadcrumb = false
+    breadcrumb = true
     toc = true
     sidebar = true
 
@@ -41,6 +52,7 @@
     enabled = true
     sort = "weight"
     reverse = false
+    webshare = true
 
 [[sharing.providers]]
     name = "LinkedIn"
@@ -73,43 +85,30 @@
     weight = 50
     clipboard = true
 
-[sections]
-    [sections.blog]
-        title = "Blog"
-        sort = "date"
-        reverse = true
-        cols = 3
-        color = ""
-        padding = "0"
-        header = "full"
-        footer = "none"
-        orientation = "stacked"
-        style = "border-0 card-zoom"
-        homepage = 3
-        separator = true
-    [sections.projects]
-        title = "Projects"
-        layout = "card"
-        sort = "title"
-        reverse = false
-        nested = true
-        cols = 1
-        background = "body-tertiary"
-        color = "body"
-        padding = "3"
-        header = "none"
-        footer = "tags"
-        orientation = "horizontal"
-        style = "border-1 card-emphasize"
-        homepage = 3
-        separator = false
+# toml-docs-start sections
+# [sections]
+#     [sections.posts]
+#         title = "Posts"
+#         sort = "date"
+#         reverse = true
+#         nested = true
+#         cols = 3
+#         color = ""
+#         padding = "0"
+#         header = "full"
+#         footer = "none"
+#         orientation = "stacked"
+#         style = "border-0 card-zoom"
+#         homepage = 3
+#         separator = true
+# toml-docs-end sections
 
 [favicon]
     logo = "img/favicon.png"
     sizes = [16, 32, 48]
 
 [style]
-    primary = "#2596be"
+    primary = "#d43900"
     secondary = "#6c757d"
     success = "#198754"
     info = "#0dcaf0"
@@ -118,8 +117,12 @@
     light = "#f8f9fa"
     dark = "#212529"
     themeOpacity = "10"
+    darkModeShade = "20%"
+    darkModeTint = "40%"
     themeFont = "Inter"
-    themeFontPath = "/fonts"
+    # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
+    themeFontPath = "/fonts" # local path
+    purge = false
 
 [schema]
     type = "Organization"
@@ -157,11 +160,4 @@
     #theme = "" 
 
 [links]
-    bs_badge_heading = "https://getbootstrap.com/docs/5.2/components/badge/#headings"
-    hinode_docs = "https://gethinode.com/docs"
-    hugo_imaging = "https://gohugo.io/content-management/image-processing/#imaging-configuration"
-    mozilla_image = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
-    observatory = "https://observatory.mozilla.org/analyze/demo.gethinode.com"
-    pagespeed = "https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethinode.com%2F"
-    utterances = "https://utteranc.es"
- 
+    hinode = "https://gethinode.com"
