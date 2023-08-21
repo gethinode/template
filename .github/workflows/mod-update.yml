@@ -54,7 +54,5 @@ jobs:
           [1]: https://github.com/peter-evans/create-pull-request
         labels: dependencies
         add-paths: |
-          go.mod
-          go.sum
-          **/go.mod
-          **/go.sum
+          :/**/go.mod
+          :/**/go.sum
