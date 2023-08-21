@@ -54,5 +54,6 @@ jobs:
           [1]: https://github.com/peter-evans/create-pull-request
         labels: dependencies
         add-paths: |
-          :/**/go.mod
-          :/**/go.sum
+          go.mod
+          go.sum
+        # add **/go.mod **/go.sum if your repository contains any modules in a subfolder
