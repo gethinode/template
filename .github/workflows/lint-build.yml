@@ -26,10 +26,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: lts/*
-        # cache: 'npm'
-        # cache-dependency-path: '**/package-lock.json'
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
 
-    - name: Perform clean install of npm
+    # [24/AUG/23] Adjusted from npm ci to prevent EBADPLATFORM error due to fsevents
+    - name: Install npm
       run: npm ci --omit=optional
 
     - name: Lint the source files
@@ -54,15 +55,16 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        # cache: 'npm'
-        # cache-dependency-path: '**/package-lock.json'
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
 
+    # [24/AUG/23] Adjusted from npm ci for non-macOS to prevent EBADPLATFORM error due to fsevents
     - name: Perform clean install of npm
       run:  |
         if [ "$RUNNER_OS" == "macOS" ]; then
           npm ci
         else
-          npm ci --omit=optional
+          npm i
         fi
       shell: bash
 
