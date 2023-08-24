@@ -26,8 +26,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: lts/*
-        cache: 'npm'
-        cache-dependency-path: '**/package-lock.json'
+        # cache: 'npm'
+        # cache-dependency-path: '**/package-lock.json'
 
     - name: Perform clean install of npm
       run: npm ci --omit=optional
@@ -54,8 +54,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        cache-dependency-path: '**/package-lock.json'
+        # cache: 'npm'
+        # cache-dependency-path: '**/package-lock.json'
 
     - name: Perform clean install of npm
       run:  |
