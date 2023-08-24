@@ -30,7 +30,7 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
 
     - name: Perform clean install of npm
-      run: npm ci --no-optional
+      run: npm ci --omit=optional
 
     - name: Lint the source files
       run: npm run lint      
@@ -62,7 +62,7 @@ jobs:
         if [ "$RUNNER_OS" == "macOS" ]; then
           npm ci
         else
-          npm ci --no-optional
+          npm ci --omit=optional
         fi
       shell: bash
 
