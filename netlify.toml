@@ -1,18 +1,14 @@
 [build]
     publish = "public"
-    functions = "functions"
-
-[build.environment]
-    NODE_VERSION = "18.16.1"
-    NPM_VERSION = "9.5.1"
-
-[context.production]
     command = "npm run build"
 
-[context.production.environment]
-    HUGO_VERSION = "0.110.0"
+[build.environment]
+    DART_SASS_VERSION = "1.66.1"
+    HUGO_VERSION = "0.118.2"
     HUGO_ENV = "production"
     HUGO_ENABLEGITINFO = "true"
+    NODE_VERSION = "18.17.1"
+    NPM_VERSION = "9.6.7"
 
 [[headers]]
     for = "/*"
@@ -79,3 +75,17 @@
     port = 8888
     publish = "public"
     autoLaunch = false
+
+[[plugins]]
+    package = "@gethinode/netlify-plugin-dartsass"
+
+[[plugins]]
+    package = "netlify-plugin-hugo-cache-resources"
+	[plugins.inputs]
+	# Relative path to source directory in case you use Hugo's "--s" option
+	# srcdir = ""
+
+[[plugins]]
+    package = "@netlify/plugin-lighthouse"
+    # [plugins.inputs]
+    # output_path = "reports/lighthouse.html"
