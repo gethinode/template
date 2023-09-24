@@ -24,6 +24,12 @@ github.com/gethinode/hinode v0.19.0 h1:7QDAA0RGUvFJMlmzoBfUy8b27yI5+84xPBc5/1qfW
 github.com/gethinode/hinode v0.19.0/go.mod h1:2+ioIlr+xp8k1eES6vGXWmmoxu+Mz+FHan3Ea8YPFd0=
 github.com/gethinode/hinode v0.20.0 h1:A6lxLIdKUMHOFWz9D7iQaSpqcMlKDPK1e/Cs3/SV1P8=
 github.com/gethinode/hinode v0.20.0/go.mod h1:/q/TH3TlGSzBHunDb3TdrpO7Zrckr0CeLay/Qpj9uWQ=
+github.com/gethinode/hinode v0.20.1 h1:M2sNX1lpzwlogYFzn1fzZ5zTHU52zb7oSHIEnTze9LA=
+github.com/gethinode/hinode v0.20.1/go.mod h1:55zVYVPWwIaJVdVXxDAQZn0sOXmPSA/kTLCuGLYCH/k=
+github.com/gethinode/hinode v0.20.2 h1:2Tcz593v9CAezogZzX9fXiN49nbUCkFbOacsAyjM1YI=
+github.com/gethinode/hinode v0.20.2/go.mod h1:55zVYVPWwIaJVdVXxDAQZn0sOXmPSA/kTLCuGLYCH/k=
+github.com/gethinode/hinode v0.20.3 h1:isWMVc6NAN3FuzXnIrvLKkaWbtwtyp7jYwoHGJdGx/4=
+github.com/gethinode/hinode v0.20.3/go.mod h1:55zVYVPWwIaJVdVXxDAQZn0sOXmPSA/kTLCuGLYCH/k=
 github.com/gethinode/hinode v0.20.4 h1:bdO6SqgY5goC1GhplfWXF4I7wDvPPGe0MZYqE4ygNU4=
 github.com/gethinode/hinode v0.20.4/go.mod h1:mGm4kP3NaGNdlnchj6UjxF0PsZ+bVTP1Rhjtq30kidQ=
 github.com/nextapps-de/flexsearch v0.0.0-20230711092928-1243fd883ec3 h1:H/qVR5O4BXjRjD+5PZB+r4ug2BSJ2Of4RtwOntd+OKo=
