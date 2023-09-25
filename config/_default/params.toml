@@ -13,7 +13,7 @@
 
 [modules]
     core = ["bootstrap", "flexsearch", "fontawesome"]
-    optional = ["leaflet", "katex"]
+    optional = ["leaflet", "katex", "lottie"]
     excludeSCSS = ["bootstrap"]
     disableTemplate = ["katex"]
     [modules.fontawesome]
@@ -125,6 +125,7 @@
     themeFont = "Inter"
     # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
     themeFontPath = "/fonts" # local path
+    fontSizeBase = "1rem"
     purge = false
 
 [schema]
