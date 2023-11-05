@@ -16,6 +16,8 @@
     optional = ["leaflet", "katex", "lottie"]
     excludeSCSS = ["bootstrap"]
     disableTemplate = ["katex"]
+    [modules.katex]
+        state = "defer"
     [modules.fontawesome]
         inline = true
         debug = true
@@ -24,6 +26,7 @@
 [debugging]
     showJS = false
     showSCSS = false
+    purgeHTMLComments = false
 
 [docs]
     github = "https://github.com/gethinode/hinode"
@@ -41,8 +44,9 @@
     logo = "/img/logo_icon.svg"
     color = "body"
     fixed = true
-    offset = "3.8em"
+    offset = "5.5rem"
     search = true
+    searchModal = false
     breadcrumb = true
     toc = true
     sidebar = true
