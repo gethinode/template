@@ -50,6 +50,8 @@ github.com/gethinode/hinode v0.21.11 h1:QYfLb0aOM1zLyRacuZmMeKoW2YCgxBL4xGeO3Da3
 github.com/gethinode/hinode v0.21.11/go.mod h1:fhOLkYf44ngah7wtFP56lZkwRXiZDlYQomb+ojKrHSw=
 github.com/gethinode/hinode v0.22.0 h1:Xyum+9nzFAHXlApwT2yfuEJXQbrGhWTA/y3njiK6Lp4=
 github.com/gethinode/hinode v0.22.0/go.mod h1:svZ+xbzxkX3DNkqTw7g/W0QJRCjl+kK8k2xo8Jh1qq4=
+github.com/gethinode/hinode v0.22.2 h1:RMZI6QbNcJ4cD8S3CPnnod0r/FvqAARYvjGRmYhe78s=
+github.com/gethinode/hinode v0.22.2/go.mod h1:svZ+xbzxkX3DNkqTw7g/W0QJRCjl+kK8k2xo8Jh1qq4=
 github.com/gethinode/mod-bootstrap v1.2.2 h1:Q8E04OKWr9owk7nhQ/NBukUgSFhsECxZsOLEaf5oeiQ=
 github.com/gethinode/mod-bootstrap v1.2.2/go.mod h1:DcpPc2cNaXUPGEvhD7npuEEPA7573NvakTlrwFbyjr8=
 github.com/gethinode/mod-flexsearch v1.6.0 h1:Rjx+GLOByFLmaWD9hZXwmuKN8A89te6BZAIq2c9QBKg=
