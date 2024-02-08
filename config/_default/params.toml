@@ -19,12 +19,15 @@
     optional = ["leaflet", "katex", "lottie"]
     excludeSCSS = ["bootstrap"]
     disableTemplate = ["katex"]
-    [modules.katex]
-        state = "defer"
+    [modules.flexsearch]
+        frontmatter = false
+        filter = ""
     [modules.fontawesome]
         inline = true
         debug = true
         skipMissing = false
+    [modules.katex]
+        state = "defer"
 
 [debugging]
     showJS = false
