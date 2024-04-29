@@ -60,6 +60,12 @@ github.com/gethinode/hinode v0.22.5 h1:zpjSDgWQVbq4BjPduxwexQB18gawFeinzPkaRRTs2
 github.com/gethinode/hinode v0.22.5/go.mod h1:hsskrlBRnTbpCjrDtGbK8C1VYGML7ezHtCDGDiYL2mQ=
 github.com/gethinode/hinode v0.23.1 h1:H5o0Szu1jJRItC48swzgEu4EX2ph7XJn///Kl/QwA0c=
 github.com/gethinode/hinode v0.23.1/go.mod h1:jGj5lTBDHl5jRPP+8NEUgRN2xzlLkyy5hB8jVpMBU1w=
+github.com/gethinode/hinode v0.23.2 h1:FTTadd/AvROtOwQ0h5NPR+Pc25gPvjlnXM5EdwUuuzk=
+github.com/gethinode/hinode v0.23.2/go.mod h1:jGj5lTBDHl5jRPP+8NEUgRN2xzlLkyy5hB8jVpMBU1w=
+github.com/gethinode/hinode v0.23.4 h1:+3G9qg0jjrRiPsR0U1UGSO9IgJWbmS3t1IbrbOlGQOo=
+github.com/gethinode/hinode v0.23.4/go.mod h1:jGj5lTBDHl5jRPP+8NEUgRN2xzlLkyy5hB8jVpMBU1w=
+github.com/gethinode/hinode v0.23.7 h1:YkA90ERURcx98xlNu8fTyJg4EmqUK57OLEzs6v+zOh4=
+github.com/gethinode/hinode v0.23.7/go.mod h1:jGj5lTBDHl5jRPP+8NEUgRN2xzlLkyy5hB8jVpMBU1w=
 github.com/gethinode/mod-bootstrap v1.2.2 h1:Q8E04OKWr9owk7nhQ/NBukUgSFhsECxZsOLEaf5oeiQ=
 github.com/gethinode/mod-bootstrap v1.2.2/go.mod h1:DcpPc2cNaXUPGEvhD7npuEEPA7573NvakTlrwFbyjr8=
 github.com/gethinode/mod-bootstrap v1.2.5 h1:h6yAlkMZA34wJU3pLFpLxp1ynEBte/YTY4kGEQtMGPE=
@@ -76,6 +82,8 @@ github.com/gethinode/mod-flexsearch v1.8.1 h1:xwPvmmxd8Tdyxp8/rnd9KRGqIDtZs/YwAQ
 github.com/gethinode/mod-flexsearch v1.8.1/go.mod h1:L8hrnpupx27cez2ObMX8gWnhbW6qss4HGH1Ea4UaBRQ=
 github.com/gethinode/mod-flexsearch v1.10.0 h1:ymlHu5G2635D/h2axG4jgpGS+Vvtzxg07SZX8pJOJSo=
 github.com/gethinode/mod-flexsearch v1.10.0/go.mod h1:L8hrnpupx27cez2ObMX8gWnhbW6qss4HGH1Ea4UaBRQ=
+github.com/gethinode/mod-flexsearch v1.10.1 h1:aZ4WjUxfiCV1eiGjIUdP+lRTlOI/flPc6ABUQ99C+Es=
+github.com/gethinode/mod-flexsearch v1.10.1/go.mod h1:L8hrnpupx27cez2ObMX8gWnhbW6qss4HGH1Ea4UaBRQ=
 github.com/gethinode/mod-fontawesome v1.5.0 h1:3mW5dnWauuF9wSWXNIY+PPgTNPlc/xQOQoG7XGic1Yk=
 github.com/gethinode/mod-fontawesome v1.5.0/go.mod h1:Ki1qkWEOiF0hQpCgWeZRw+HkpL6nd1DxKFptU0O2feI=
 github.com/gethinode/mod-fontawesome v1.5.1 h1:C7goQY4HrEua/lpjC++laydNKBuYo1+307ngn5tyXeM=
