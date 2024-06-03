@@ -14,21 +14,6 @@
     [main.build]
         transpiler = "libsass"
 
-[modules]
-    core = ["bootstrap", "flexsearch", "fontawesome"]
-    optional = ["leaflet", "katex", "lottie"]
-    excludeSCSS = ["bootstrap"]
-    disableTemplate = ["katex"]
-    [modules.flexsearch]
-        frontmatter = false
-        filter = ""
-    [modules.fontawesome]
-        inline = true
-        debug = true
-        skipMissing = false
-    [modules.katex]
-        state = "defer"
-
 [debugging]
     showJS = false
     showSCSS = false
