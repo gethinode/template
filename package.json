@@ -1,6 +1,6 @@
 {
   "name": "@gethinode/template",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
@@ -38,24 +38,26 @@
     "url": "https://github.com/gethinode/hinode/issues"
   },
   "homepage": "https://gethinode.com",
-  "devDependencies": {
+  "dependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
-    "@gethinode/netlify-plugin-dartsass": "^0.3.0",
-    "@netlify/plugin-lighthouse": "^6.0.0",
     "autoprefixer": "^10.4.19",
     "cssnano": "^7.0.1",
     "cssnano-preset-advanced": "^7.0.1",
+    "hugo-bin": "0.123.2",
+    "purgecss-whitelister": "^2.4.0"
+  },
+  "devDependencies": {
+    "@gethinode/netlify-plugin-dartsass": "^0.3.0",
+    "@netlify/plugin-lighthouse": "^6.0.0",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.2.0",
-    "hugo-bin": "^0.123.2",
     "markdownlint-cli2": "^0.13.0",
     "netlify-plugin-hugo-cache-resources": "^0.2.1",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^11.0.0",
-    "purgecss-whitelister": "^2.4.0",
     "rimraf": "^5.0.7",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0"
