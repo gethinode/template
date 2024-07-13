@@ -92,6 +92,8 @@ github.com/gethinode/hinode v0.24.10 h1:N4q8ZKL/0FG5GPpIXEAzQolN324NjvbMoaKilSmG
 github.com/gethinode/hinode v0.24.10/go.mod h1:FFYzUxTGPGNJKHycxNe9i0Y53p/sdg0NIpSY7Ih2PKE=
 github.com/gethinode/hinode v0.24.12 h1:NMH9IeGlpRN/NWtJdHn4Fb3DKp2kkllO0/fEn3XB8Ps=
 github.com/gethinode/hinode v0.24.12/go.mod h1:4PU3rfC+OhaO7rwg21RHwNWZS3gBO5nK5Xf1tFhvs84=
+github.com/gethinode/hinode v0.24.13 h1:+i6jXXB0ZECCg61yq0dVcLj5r9RErVYF67+4VW2FPWw=
+github.com/gethinode/hinode v0.24.13/go.mod h1:ZVv9jOsrthbcCtiFditYgm5j/5DPKZdIggme/fSFJkw=
 github.com/gethinode/mod-bootstrap v1.2.2 h1:Q8E04OKWr9owk7nhQ/NBukUgSFhsECxZsOLEaf5oeiQ=
 github.com/gethinode/mod-bootstrap v1.2.2/go.mod h1:DcpPc2cNaXUPGEvhD7npuEEPA7573NvakTlrwFbyjr8=
 github.com/gethinode/mod-bootstrap v1.2.5 h1:h6yAlkMZA34wJU3pLFpLxp1ynEBte/YTY4kGEQtMGPE=
@@ -172,6 +174,8 @@ github.com/gethinode/mod-lottie v1.5.4 h1:+xbamSsjcnP2tyzGl0CA1enma7gkAp67wenmuP
 github.com/gethinode/mod-lottie v1.5.4/go.mod h1:gALqz48aYpoDLxJOI3LzIpdy0Eq/lOBNtlcOxABa9tg=
 github.com/gethinode/mod-lottie v1.5.5 h1:uEJKsz+ovsZtbGkMhPONcIhtG6M3RjYiK+iVoScLOVo=
 github.com/gethinode/mod-lottie v1.5.5/go.mod h1:VTvBxD8VokICwnEqM0VUZFZHBYxLf4/grDFQyEh1DL0=
+github.com/gethinode/mod-simple-datatables v1.0.2 h1:zhqxHet3iLQWYCBbGROALpOY9zQlptMycFkz1Tto5bA=
+github.com/gethinode/mod-simple-datatables v1.0.2/go.mod h1:mmrcvAJU2i3SMU56VmQ5PW43uDXBcsJKcZwCHrvl3Kc=
 github.com/gethinode/mod-utils v1.0.0 h1:cqHm2xS5uDiJzRm1KfHaNbq6uMVDKLhQa8/BuTZ1nhY=
 github.com/gethinode/mod-utils v1.0.0/go.mod h1:ONJm3pHCq7nvaPNjusLZNCeCbhOhSBH4HVKHwK1FdYE=
 github.com/gethinode/mod-utils v1.0.1 h1:jhZGlGFHHL1f5HXbBMXfiZ2gCz4TVafAzjnRPTIBSEE=
