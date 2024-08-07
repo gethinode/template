@@ -85,7 +85,7 @@
 	# Relative path to source directory in case you use Hugo's "--s" option
 	# srcdir = ""
 
-[[plugins]]
+# [[plugins]]
     # package = "@netlify/plugin-lighthouse"
     # [plugins.inputs]
     # output_path = "reports/lighthouse.html"
