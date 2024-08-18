@@ -9,7 +9,9 @@ permissions:
 jobs:
   review-dependabot-pr:
     runs-on: ubuntu-latest
-    if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
+    # remove next line and uncomment the line after to enable auto merge
+    if: false
+    # if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
       - name: Dependabot metadata
         id: metadata
