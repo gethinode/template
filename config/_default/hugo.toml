@@ -1,6 +1,5 @@
 title = "Hinode"
 copyright = "Copyright © 2024 Mark Dumay."
-paginate = 9
 enableGitInfo = true
 
 # additional settings
@@ -38,6 +37,9 @@ home = ["HTML", "RSS", "REDIR"]
   
 [taxonomies]
   tag = 'tags'
+
+[pagination]
+  pagerSize = 9
 
 [privacy]
   [privacy.vimeo]
@@ -85,7 +87,7 @@ home = ["HTML", "RSS", "REDIR"]
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.120.0"
+    min = "0.134.0"
     max = ""
   [[module.mounts]]
     source = "archetypes"
