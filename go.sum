@@ -112,6 +112,8 @@ github.com/gethinode/hinode v0.26.1 h1:hUpLRXk66v2TkXjKS08nYIB4a245UCVqoVweatODC
 github.com/gethinode/hinode v0.26.1/go.mod h1:0Ww+TunQSsSuNdrQgFqXb9eroY9hZXMQnU5Tc91/0Zs=
 github.com/gethinode/hinode v0.26.6 h1:wHSZlUH+0qH+6ifyGXHen4+QFjuYfbgKAIM44NgrONk=
 github.com/gethinode/hinode v0.26.6/go.mod h1:55RIU/2XkuJiJyPE4DUV0J8Q0bTS7dcqhmQB4FARk5c=
+github.com/gethinode/hinode v0.26.7 h1:KxsuJ7n6M8DYQNasw8KOAGWUb/OsxA6SMkKDDTcvorU=
+github.com/gethinode/hinode v0.26.7/go.mod h1:YYtAJzvr7yTsc/7agiyDyMWm1QMHynqmR/+F5jfUrDQ=
 github.com/gethinode/mod-bootstrap v1.2.2 h1:Q8E04OKWr9owk7nhQ/NBukUgSFhsECxZsOLEaf5oeiQ=
 github.com/gethinode/mod-bootstrap v1.2.2/go.mod h1:DcpPc2cNaXUPGEvhD7npuEEPA7573NvakTlrwFbyjr8=
 github.com/gethinode/mod-bootstrap v1.2.5 h1:h6yAlkMZA34wJU3pLFpLxp1ynEBte/YTY4kGEQtMGPE=
@@ -224,6 +226,8 @@ github.com/gethinode/mod-simple-datatables v1.0.7 h1:pfxWhgmn/njJcynNIDnUyeOBW0t
 github.com/gethinode/mod-simple-datatables v1.0.7/go.mod h1:Y7AzIYAWpzDKLvH96eqBA/Gs3jompWCgxadLuoKZ/rc=
 github.com/gethinode/mod-simple-datatables v1.0.8 h1:J8hA+SXdTLaRNZwN70ZEyADn+VgNoAaxVDMXsMPTZBg=
 github.com/gethinode/mod-simple-datatables v1.0.8/go.mod h1:RsTHWAt1J9/m7kzhYNSJB7CDyk+8DrG+46/aFrP6KJw=
+github.com/gethinode/mod-simple-datatables v1.0.9 h1:8OnpY/axFkgxJ598DHW4nDtxsCYmgTakAG4ZC2wRS3A=
+github.com/gethinode/mod-simple-datatables v1.0.9/go.mod h1:rgQWdDZ6lTR9+08dGY1zBDLZI/UneKPufakAK20+lmI=
 github.com/gethinode/mod-utils v1.0.0 h1:cqHm2xS5uDiJzRm1KfHaNbq6uMVDKLhQa8/BuTZ1nhY=
 github.com/gethinode/mod-utils v1.0.0/go.mod h1:ONJm3pHCq7nvaPNjusLZNCeCbhOhSBH4HVKHwK1FdYE=
 github.com/gethinode/mod-utils v1.0.1 h1:jhZGlGFHHL1f5HXbBMXfiZ2gCz4TVafAzjnRPTIBSEE=
