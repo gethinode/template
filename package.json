@@ -1,6 +1,6 @@
 {
   "name": "@gethinode/template",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "build": "hugo --gc --minify",
     "build:cache": "npm run -s prebuild && hugo config | grep cachedir && hugo --gc --minify -e ci",
     "build:debug": "hugo -e debug --debug",
+    "build:headers": "hugo --renderSegments headers -d prebuild && cpy prebuild/server.toml config/_default/ --flat",
     "build:preview": "npm run build -D -F",
     "clean:public": "rimraf public",
     "clean:install": "rimraf package-lock.json node_modules",
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "@gethinode/netlify-plugin-dartsass": "^0.3.0",
+    "cpy-cli": "^5.0.0",
     "eslint": "^9.9.1",
     "neostandard": "^0.11.4",
     "markdownlint-cli2": "^0.14.0",
