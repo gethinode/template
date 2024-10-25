@@ -24,8 +24,10 @@
       "span",
       "strong",
       "svg",
+      "symbol",
       "title",
-      "ul"
+      "ul",
+      "use"
     ],
     "classes": [
       "active",
@@ -108,7 +110,9 @@
       "ms-auto",
       "ms-md-3",
       "mt-3",
+      "mt-4",
       "mt-5",
+      "mt-md-0",
       "mx-auto",
       "mx-md-0",
       "my-auto",
@@ -169,6 +173,14 @@
       "top-bar"
     ],
     "ids": [
+      "fa-face-frown",
+      "fab-github",
+      "fab-linkedin",
+      "fab-medium",
+      "fas-book-open",
+      "fas-ellipsis",
+      "fas-moon",
+      "fas-sun",
       "navbar-0-collapse",
       "navbar-mode",
       "navbar-mode-checkbox",
