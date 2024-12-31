@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/airbnb/lottie-web v5.12.2+incompatible // indirect
-	github.com/gethinode/hinode v0.27.17 // indirect
+	github.com/gethinode/hinode v0.27.18 // indirect
 	github.com/gethinode/mod-bootstrap v1.3.1 // indirect
 	github.com/gethinode/mod-csp v1.0.5 // indirect
 	github.com/gethinode/mod-flexsearch v1.12.1 // indirect
