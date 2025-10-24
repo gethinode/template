@@ -1,14 +1,15 @@
 [main]
     separator = "-"
     description = "Hinode is a clean documentation and blog theme for your Hugo site based on Bootstrap 5."
-    enableDarkMode = true
     enableLanguageSelectionStorage = false
-    modes = ["light", "dark"]
     canonifyAssetsURLs = false
     endorse = true
     footerBelowFold = false
     loading = "lazy"
     breakpoint = "md"
+    [main.colorMode]
+        enabled = true
+        modes = ["light", "dark"]
     [main.internalLinks]
         validate = true
         pretty = false
@@ -17,6 +18,7 @@
         tab = false
     [main.build]
         transpiler = "libsass"
+
 
 [debugging]
     showJS = false
@@ -40,12 +42,13 @@
     color = "body"
     fixed = true
     offset = "5.5rem"
-    search = true
-    searchModal = false
     breadcrumb = true
     toc = true
     sidebar = true
     size = "md"
+    [navigation.search]
+        enabled = true
+        modal = false
 
 [messages]
     placement = "bottom-right"
