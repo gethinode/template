@@ -152,6 +152,8 @@ github.com/gethinode/hinode v1.13.4 h1:7nlIfaGMyQQb6Lm7hkyfcijj61j473fvJZWdM51cU
 github.com/gethinode/hinode v1.13.4/go.mod h1:veZ61jDw0P36mz3qMMwCyQrOYe35Xe2aNl9WKrnKdAs=
 github.com/gethinode/hinode v1.19.3 h1:lMOhTqJR8P0OsOvA+shZN+Aj564oBpDdtBili1yLgjM=
 github.com/gethinode/hinode v1.19.3/go.mod h1:tQL2XkBuX5Z0bt4onWjd7LIs/iV9VDdD1lO4mje3Sw0=
+github.com/gethinode/hinode v1.19.6 h1:eia+Q1Sr7g1vyD/pMb1T3VTH/uKwJFxGLui3Jy+Z7pg=
+github.com/gethinode/hinode v1.19.6/go.mod h1:gaP3GSHtZ3+1f7CfyJm0nouqgDKurI68Wu1xVBaBxvw=
 github.com/gethinode/mod-bootstrap v1.2.2 h1:Q8E04OKWr9owk7nhQ/NBukUgSFhsECxZsOLEaf5oeiQ=
 github.com/gethinode/mod-bootstrap v1.2.2/go.mod h1:DcpPc2cNaXUPGEvhD7npuEEPA7573NvakTlrwFbyjr8=
 github.com/gethinode/mod-bootstrap v1.2.5 h1:h6yAlkMZA34wJU3pLFpLxp1ynEBte/YTY4kGEQtMGPE=
@@ -239,6 +241,8 @@ github.com/gethinode/mod-fontawesome/v2 v2.1.1 h1:EieVCvEiT0ulXpEHY4kCLJvZCIvGku
 github.com/gethinode/mod-fontawesome/v2 v2.1.1/go.mod h1:zukv88wXqquEvTJJ9mWWk8Ia+9INnA41wYqusf2RcHA=
 github.com/gethinode/mod-fontawesome/v2 v2.1.2 h1:v1aHhbLLwe/05zRHnx9qGqh6b3toDzcLzuv61rWAoGU=
 github.com/gethinode/mod-fontawesome/v2 v2.1.2/go.mod h1:zukv88wXqquEvTJJ9mWWk8Ia+9INnA41wYqusf2RcHA=
+github.com/gethinode/mod-fontawesome/v2 v2.1.3 h1:G2LyPQVhrXxBSJ/q+mBMXpNClobkQPd3Rw1vzIyvAdk=
+github.com/gethinode/mod-fontawesome/v2 v2.1.3/go.mod h1:zukv88wXqquEvTJJ9mWWk8Ia+9INnA41wYqusf2RcHA=
 github.com/gethinode/mod-google-analytics v1.1.3 h1:24qxV5vKIex3zSdow+5r0o8rox1lrO31oGi0/XusBy4=
 github.com/gethinode/mod-google-analytics v1.1.3/go.mod h1:dl628cFozpCvoIMCiV7ujzQipjxcm3eatXrSfLPWNII=
 github.com/gethinode/mod-google-analytics v1.1.5 h1:wlOcgwNEJAnIQmPJIo3cT06xnr1dxN/ydUIztoC/7rM=
