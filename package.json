@@ -1,7 +1,7 @@
 {
   "name": "@gethinode/template",
-  "version": "0.15.0",
-  "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
+  "version": "2.0.0",
+  "description": "Hinode is a production-ready Hugo theme built on Bootstrap 5. Open source, actively maintained, and built for developers.",
   "main": "index.js",
   "scripts": {
     "prestart": "npm run -s mod:vendor",
@@ -11,7 +11,9 @@
     "build": "hugo --gc --minify",
     "build:cache": "npm run -s prebuild && hugo config | grep cachedir && hugo --gc --minify -e ci",
     "build:debug": "hugo -e debug --debug",
-    "build:headers": "hugo --renderSegments headers -d prebuild && cpy prebuild/server.toml config/_default/ --flat",
+    "build:headers": "npm run build:headers:dev && npm run build:headers:prod",
+    "build:headers:dev": "hugo --renderSegments headers -d prebuild-headers-dev -e development && cpy prebuild-headers-dev/server.toml config/_default/ --flat",
+    "build:headers:prod": "hugo --renderSegments headers -d prebuild-headers-prod -e production && cpy prebuild-headers-prod/netlify.toml ./ --flat",
     "build:preview": "npm run build -D -F",
     "clean:public": "rimraf public",
     "clean:install": "rimraf package-lock.json node_modules",
@@ -40,30 +42,32 @@
   },
   "homepage": "https://gethinode.com",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^7.0.2",
-    "autoprefixer": "^10.4.22",
-    "cssnano": "^7.1.2",
-    "cssnano-preset-advanced": "^7.0.10",
-    "hugo-bin": "0.149.2",
-    "purgecss-whitelister": "^2.4.0"
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "autoprefixer": "^10.4.27",
+    "cssnano": "^7.1.3",
+    "cssnano-preset-advanced": "^7.0.11",
+    "hugo-extended": "^0.158.0",
+    "postcss-cli": "^11.0.1",
+    "rimraf": "^6.1.3"
   },
   "devDependencies": {
-    "@gethinode/netlify-plugin-dartsass": "^0.3.0",
-    "cpy-cli": "^6.0.0",
-    "eslint": "^9.39.1",
-    "neostandard": "^0.12.2",
-    "markdownlint-cli2": "^0.19.1",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "cpy-cli": "^7.0.0",
+    "eslint": "^10.1.0",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "markdownlint-cli2": "^0.22.0",
     "netlify-plugin-hugo-cache-resources": "^0.2.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^11.0.1",
-    "rimraf": "^6.1.2",
-    "stylelint": "^16.26.1",
-    "stylelint-config-standard-scss": "^16.0.0"
+    "replace-in-files-cli": "^4.0.0",
+    "shx": "^0.4.0",
+    "stylelint": "^17.5.0",
+    "stylelint-config-standard-scss": "^17.0.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
-  },
-  "hugo-bin": {
-    "buildTags": "extended"
   }
 }

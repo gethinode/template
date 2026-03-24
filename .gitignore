@@ -1,6 +1,9 @@
 /_vendor
 /public
 /prebuild
+prebuild-headers/
+prebuild-headers-dev/
+prebuild-headers-prod/
 resources/
 node_modules/
 
