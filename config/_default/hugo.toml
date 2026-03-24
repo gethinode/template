@@ -1,5 +1,5 @@
 title = "Hinode"
-copyright = "Copyright © 2022 - 2025 Mark Dumay."
+copyright = "Copyright © 2022 - 2026 Hinode Team."
 enableGitInfo = true
 
 # additional settings
@@ -123,7 +123,9 @@ home = ["HTML", "RSS", "REDIR", "netlify", "server"]
     source = "static"
     target = "static"
   [[module.imports]]
-    path = "github.com/gethinode/hinode"
+    path = "github.com/gethinode/mod-blocks"
+  [[module.imports]]
+    path = "github.com/gethinode/hinode/v2"
 
 [segments]
   [segments.headers]

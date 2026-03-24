@@ -10,6 +10,7 @@
     [main.colorMode]
         enabled = true
         modes = ["light", "dark"]
+        toggle = false
     [main.internalLinks]
         validate = true
         pretty = false
@@ -17,8 +18,7 @@
         cue = false
         tab = false
     [main.build]
-        transpiler = "libsass"
-
+        transpiler = "dartsass"
 
 [debugging]
     showJS = false
@@ -29,12 +29,6 @@
     github = "https://github.com/gethinode/hinode"
     release = "https://github.com/gethinode/hinode/releases/tag/"
     checkVersion = false
-
-[home]
-    # sections = ["posts"]
-    fullCover = false
-    centerHeadline = false
-    style = ""
 
 [navigation]
     anchor = true
@@ -90,24 +84,6 @@
     weight = 50
     clipboard = true
 
-# toml-docs-start sections
-# [sections]
-#     [sections.posts]
-#         title = "Posts"
-#         sort = "date"
-#         reverse = true
-#         nested = true
-#         cols = 3
-#         color = ""
-#         padding = "0"
-#         header = "full"
-#         footer = "none"
-#         orientation = "stacked"
-#         style = "border-0 card-zoom"
-#         homepage = 3
-#         separator = true
-# toml-docs-end sections
-
 [favicon]
     logo = "img/favicon.png"
     sizes = [16, 32, 48]
@@ -128,7 +104,7 @@
     # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
     themeFontPath = "/fonts" # local path
     fontSizeBase = "1rem"
-    purge = false
+    purge = true
 
 [schema]
     type = "Organization"
