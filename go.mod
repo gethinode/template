@@ -5,8 +5,8 @@ go 1.20
 require (
 	github.com/FortAwesome/Font-Awesome v0.0.0-20260210181720-337dd2045d56 // indirect
 	github.com/airbnb/lottie-web v5.13.0+incompatible // indirect
-	github.com/cloudcannon/bookshop/hugo/v3 v3.18.0 // indirect
-	github.com/gethinode/hinode/v2 v2.0.0 // indirect
+	github.com/cloudcannon/bookshop/hugo/v3 v3.18.2 // indirect
+	github.com/gethinode/hinode/v2 v2.1.0 // indirect
 	github.com/gethinode/mod-blocks v1.15.2 // indirect
 	github.com/gethinode/mod-bootstrap v1.3.5 // indirect
 	github.com/gethinode/mod-csp v1.0.9 // indirect
