@@ -44,8 +44,8 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "autoprefixer": "^10.4.27",
-    "cssnano": "^7.1.4",
-    "cssnano-preset-advanced": "^7.0.13",
+    "cssnano": "^7.1.9",
+    "cssnano-preset-advanced": "^7.0.16",
     "hugo-extended": "^0.160.1",
     "postcss-cli": "^11.0.1",
     "rimraf": "^6.1.3"
@@ -56,10 +56,10 @@
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "cpy-cli": "^7.0.0",
-    "eslint": "^10.2.0",
+    "eslint": "^10.3.0",
     "globals": "^17.5.0",
     "husky": "^9.1.7",
-    "markdownlint-cli2": "^0.22.0",
+    "markdownlint-cli2": "^0.22.1",
     "netlify-plugin-hugo-cache-resources": "^0.2.1",
     "npm-run-all": "^4.1.5",
     "replace-in-files-cli": "^4.0.0",
