@@ -131,7 +131,7 @@ This template uses **npm** by default. If you prefer [pnpm](https://pnpm.io) —
    pnpm run build
    ```
 
-To run CI on pnpm too, change `package-manager: npm` to `package-manager: pnpm` in the workflow callers under `.github/workflows/`.
+If you use the bundled GitHub Actions workflows, update them to use pnpm as well — replace the `npm ci`/`npm i` install steps with `pnpm install` (which runs the `postinstall` shim above).
 
 <!-- MARKDOWN LINKS -->
 [docs]: https://gethinode.com/docs
