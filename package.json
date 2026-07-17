@@ -3,6 +3,18 @@
   "version": "2.0.0",
   "description": "Hinode is a production-ready Hugo theme built on Bootstrap 5. Open source, actively maintained, and built for developers.",
   "main": "index.js",
+  "browserslist": [
+    ">= 0.5%",
+    "last 2 major versions",
+    "not dead",
+    "Chrome >= 60",
+    "Firefox >= 60",
+    "Firefox ESR",
+    "iOS >= 12",
+    "Safari >= 12",
+    "not Explorer <= 11",
+    "not kaios <= 2.5"
+  ],
   "scripts": {
     "prestart": "npm run -s mod:vendor",
     "start": "hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings",
@@ -45,7 +57,6 @@
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "autoprefixer": "^10.4.27",
     "cssnano": "^7.1.9",
-    "cssnano-preset-advanced": "^7.0.16",
     "hugo-extended": "^0.161.1",
     "postcss-cli": "^11.0.1",
     "rimraf": "^6.1.3"
