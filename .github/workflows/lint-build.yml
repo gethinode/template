@@ -115,13 +115,27 @@ jobs:
       shell: pwsh
 
     # Cache Hugo cachedir and resourcedir (configured in config/ci/hugo.toml) for each OS.
-    # Rolling key restores the previous snapshot as a warm start, then saves a fresh one after build.
+    # The key restores the previous snapshot as a warm start, then saves a fresh one after build.
     # No additional content-based invalidation is needed; Hugo uses checksums itself.
+    #
+    # The suffix rotates weekly rather than per run. A run_id suffix saves a fresh entry every run and
+    # never reclaims the previous one, and a repository's Actions cache is a single ~10 GB LRU pool
+    # shared by every workflow in it — so those entries fill the pool and GitHub then evicts by last
+    # access, taking out the small caches other jobs depend on rather than the ones causing the
+    # pressure. An ISO-week suffix caps this prefix at roughly two live entries per OS per branch.
+    #
+    # %G/%V are the ISO year and week and must be paired — %Y/%V is wrong across a year boundary. The
+    # step needs an explicit bash shell because the Windows legs of the matrix default to pwsh.
+    - name: Compute the weekly cache epoch
+      id: cache-epoch
+      run: echo "week=$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+      shell: bash
+
     - name: Use Hugo cache
       uses: actions/cache@v6
       with:
         path: ${{ env.HUGO_CACHEDIR }}
-        key: ${{ runner.os }}-${{ env.CACHE_KEY }}-${{ github.run_id }}
+        key: ${{ runner.os }}-${{ env.CACHE_KEY }}-${{ steps.cache-epoch.outputs.week }}
         restore-keys: |
           ${{ runner.os }}-${{ env.CACHE_KEY }}-
 
