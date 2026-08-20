@@ -65,6 +65,74 @@ Hinode is a theme that uses [Hugo modules][hugo_modules] to install and maintain
 
 You can now run `npm run start` to start a local development server.
 
+## Using pnpm (optional)
+
+This template uses **npm** by default. If you prefer [pnpm](https://pnpm.io) — faster installs, a shared package store, a 24-hour supply-chain quarantine, and stricter dependency isolation — switch with the following steps.
+
+1. Replace the lockfile:
+
+   ```bash
+   pnpm import          # seed pnpm-lock.yaml from package-lock.json
+   rm package-lock.json
+   ```
+
+2. Pin pnpm in `package.json` (use your installed pnpm version):
+
+   ```json
+   "packageManager": "pnpm@10.0.0"
+   ```
+
+3. Add a `.npmrc` for the supply-chain quarantine:
+
+   ```ini
+   # Reject any version published less than 24h ago.
+   minimum-release-age=1440
+   ```
+
+4. Add `pnpm-workspace.yaml`:
+
+   ```yaml
+   allowBuilds:
+     hugo-extended: true # downloads the platform-specific Hugo binary
+   minimumReleaseAgeExclude:
+     - "@gethinode/*"
+   ```
+
+5. Restore PostCSS compatibility. Hugo needs an npm-format `postcss` bin shim, which pnpm does not create. Add `cmd-shim` and a postinstall step:
+
+   ```bash
+   pnpm add -D cmd-shim
+   ```
+
+   Create `scripts/fix-postcss-bin.cjs`:
+
+   ```js
+   const fs = require('fs');
+   const path = require('path');
+   const cmdShim = require('cmd-shim');
+
+   const entry = path.join('node_modules', 'postcss-cli', 'index.js');
+   const target = path.join('node_modules', '.bin', 'postcss');
+   if (fs.existsSync(entry)) {
+     fs.mkdirSync(path.dirname(target), { recursive: true });
+     cmdShim(entry, target).catch((e) => {
+       console.error('fix-postcss-bin:', e.message);
+       process.exit(1);
+     });
+   }
+   ```
+
+   Then add to your `package.json` scripts: `"postinstall": "node scripts/fix-postcss-bin.cjs"`.
+
+6. Install and build:
+
+   ```bash
+   pnpm install
+   pnpm run build
+   ```
+
+If you use the bundled GitHub Actions workflows, update them to use pnpm as well — replace the `npm ci`/`npm i` install steps with `pnpm install` (which runs the `postinstall` shim above).
+
 <!-- MARKDOWN LINKS -->
 [docs]: https://gethinode.com/docs
 [git_download]: https://git-scm.com

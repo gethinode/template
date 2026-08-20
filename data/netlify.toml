@@ -3,9 +3,12 @@
     publish = "public"
     command = "npm run build"
 
+# HUGO_VERSION is deliberately absent. The build invokes `hugo` from an npm script, which
+# resolves to node_modules/.bin/hugo provided by the hugo-extended dependency, so the
+# binary Netlify installs would be downloaded and then never used. The pin lives in
+# package.json, which is the single source of truth for the Hugo version.
 [build.environment]
     DART_SASS_VERSION = "1.98.0"
-    HUGO_VERSION = "0.158.0"
     HUGO_ENV = "production"
     HUGO_ENABLEGITINFO = "true"
     NODE_VERSION = "24.12.0"
