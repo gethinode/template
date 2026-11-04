@@ -16,7 +16,7 @@ ignoreErrors = ["error-remote-getjson"]
 
 timeout = "180s"
 
-languageCode = "en-us"
+locale = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
@@ -99,7 +99,7 @@ home = ["HTML", "RSS", "REDIR", "netlify", "server"]
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.136.3"
+    min = "0.158.0"
   [[module.mounts]]
     source = "archetypes"
     target = "archetypes"
