@@ -24,6 +24,8 @@ github.com/gethinode/hinode/v3 v3.42.1 h1:4smK/VeMpJLGUPrflFEZW5J3YEis1UGY1q8pRk
 github.com/gethinode/hinode/v3 v3.42.1/go.mod h1:G+DnKeT2Amk6cDbY75j6mIllUWZD5wKY7YXXsNuL34U=
 github.com/gethinode/hinode/v3 v3.51.0 h1:nnlowUAmkiwFswrz+WZW5HbDxo/6R6RjQKJBnsl6RGE=
 github.com/gethinode/hinode/v3 v3.51.0/go.mod h1:JpShXNkZMn8eItAaT2SNpcBjhdAN0STY6+oCDTZVYX4=
+github.com/gethinode/hinode/v3 v3.52.1 h1:CMmlY16xtZIXaaAkzn4VawOjX8YDBvW7RzrCAiMZQnk=
+github.com/gethinode/hinode/v3 v3.52.1/go.mod h1:6j2tKUMxHHx0W+zDDRlLW+7xgKCZ+CvpioCJZctSW/I=
 github.com/gethinode/mod-blocks/v2 v2.2.4 h1:3Kdbu17EfNyIcYy/6Lg/pVS3tKbcRPacenLG0KYbkZY=
 github.com/gethinode/mod-blocks/v2 v2.2.4/go.mod h1:1a4A2RrNSEoqgUjJoNPc2T+JtfPe0GvjHNrxjXauWCA=
 github.com/gethinode/mod-blocks/v2 v2.3.4 h1:ZLcKEV/PDsadGGiYz6ahszUv1TDRfH1nLDYlzS7FTGc=
@@ -124,6 +126,8 @@ github.com/gethinode/mod-utils/v6 v6.18.0 h1:GMkAU6u6u88HyZfWqAsbfOMeJ11zxO6hQHe
 github.com/gethinode/mod-utils/v6 v6.18.0/go.mod h1:E5tO9w3VKaidJpu1nI8zAKmh0bddFHOIIQnudAaXQTs=
 github.com/gethinode/mod-utils/v6 v6.18.1 h1:qbgIVyxkYAcxFounAiLkk4HrcjVoOX1v3vW1Z8y9K/M=
 github.com/gethinode/mod-utils/v6 v6.18.1/go.mod h1:E5tO9w3VKaidJpu1nI8zAKmh0bddFHOIIQnudAaXQTs=
+github.com/gethinode/mod-utils/v6 v6.18.2 h1:8B8zHY2dDMzIpYqP3VF9KwaZvph8gKiP7o47yaSRU7Q=
+github.com/gethinode/mod-utils/v6 v6.18.2/go.mod h1:E5tO9w3VKaidJpu1nI8zAKmh0bddFHOIIQnudAaXQTs=
 github.com/nextapps-de/flexsearch v0.0.0-20260529083235-f7ed963096a0 h1:QDKcU3q39lFGzdVwM6kgCGnW3ibbMfYIi0Rwl62iJpo=
 github.com/nextapps-de/flexsearch v0.0.0-20260529083235-f7ed963096a0/go.mod h1:5GdMfPAXzbA2gXBqTjC6l27kioSYzHlqDMh0+wyx7sU=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
