@@ -57,6 +57,7 @@ jobs:
 
     env:
       HUGO_CACHEDIR: ${{ matrix.hugo_cachedir }}
+      DART_SASS_VERSION: "1.98.0"
 
     steps:
     - name: Check out repository
@@ -75,8 +76,7 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
 
     - name: Install Dart Sass
-      env:
-        DART_SASS_VERSION: "1.98.0"
+      if: runner.os != 'Windows'
       run: |
         if [ "$RUNNER_OS" == "Linux" ]; then
           curl -fsSL "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" \
@@ -92,18 +92,23 @@ jobs:
           curl -fsSL "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-${SASS_ARCH}.tar.gz" \
             | tar -xz -C "$HOME"
           echo "$HOME/dart-sass" >> $GITHUB_PATH
-        elif [ "$RUNNER_OS" == "Windows" ]; then
-          sass_arch=x64
-          if [ "$RUNNER_ARCH" = "ARM64" ]; then
-            sass_arch=arm64
-          fi
-          sass_dir=$(mktemp -d)
-          curl -fsSL --retry 3 "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-windows-${sass_arch}.zip" \
-            -o "$sass_dir/dart-sass.zip"
-          unzip -q "$sass_dir/dart-sass.zip" -d "$sass_dir"
-          cygpath -w "$sass_dir/dart-sass" >> "$GITHUB_PATH"
         fi
       shell: bash
+
+    - name: Install Dart Sass on Windows
+      if: runner.os == 'Windows'
+      shell: pwsh
+      run: |
+        $version = $env:DART_SASS_VERSION
+        $archiveName = "dart-sass-$version-windows-x64.zip"
+        $archive = Join-Path $env:RUNNER_TEMP $archiveName
+        $destination = Join-Path $env:RUNNER_TEMP 'hinode-dart-sass'
+        Invoke-WebRequest -Uri "https://github.com/sass/dart-sass/releases/download/$version/$archiveName" -OutFile $archive
+        Expand-Archive -LiteralPath $archive -DestinationPath $destination
+        $sassPath = Join-Path $destination 'dart-sass'
+        & (Join-Path $sassPath 'sass.bat') --version
+        if ($LASTEXITCODE -ne 0) { throw 'Dart Sass version check failed' }
+        Add-Content -LiteralPath $env:GITHUB_PATH -Value $sassPath -Encoding utf8
 
     # [24/AUG/23] Adjusted from npm ci for non-macOS to prevent EBADPLATFORM error due to fsevents
     - name: Perform clean install of npm
