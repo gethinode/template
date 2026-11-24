@@ -39,11 +39,14 @@ Hinode is a clean blog theme for [Hugo][hugo], an open-source static site genera
 
 ## Prerequisites
 
-Hinode is a theme that uses [Hugo modules][hugo_modules] to install and maintain various components. The Hinode template requires the following software to be installed on your local machine. The Hugo binary itself is embedded as an npm binary.
+Hinode is a theme that uses [Hugo modules][hugo_modules] to install and maintain various components. The Hinode template requires the following software to be installed on your local machine. The npm installer downloads the Hugo binary.
 
 - [Git][git_download]
 - [Go binary][golang_download]
+- [Dart Sass CLI][dartsass]
 - [Node.js][nodejs] (it includes npm)
+
+The bundled installer selects standard Hugo from v0.170.0 onward and preserves Extended for earlier releases. See the [installer patch][hugo_wrapper_patch].
 
 ## Installation
 
@@ -69,40 +72,30 @@ You can now run `npm run start` to start a local development server.
 
 This template uses **npm** by default. If you prefer [pnpm](https://pnpm.io) — faster installs, a shared package store, a 24-hour supply-chain quarantine, and stricter dependency isolation — switch with the following steps.
 
-1. Replace the lockfile:
+1. Pin your pnpm 12 version in `package.json`:
+
+   ```json
+   "packageManager": "pnpm@12.15.0"
+   ```
+
+2. Replace the lockfile:
 
    ```bash
-   pnpm import          # seed pnpm-lock.yaml from package-lock.json
+   pnpm import
    rm package-lock.json
    ```
 
-2. Pin pnpm in `package.json` (use your installed pnpm version):
-
-   ```json
-   "packageManager": "pnpm@10.0.0"
-   ```
-
-3. Add a `.npmrc` for the supply-chain quarantine:
-
-   ```ini
-   # Reject any version published less than 24h ago.
-   minimum-release-age=1440
-   ```
-
-4. Add `pnpm-workspace.yaml`:
+3. Add `pnpm-workspace.yaml`:
 
    ```yaml
    allowBuilds:
-     hugo-extended: true # downloads the platform-specific Hugo binary
+     "hugo-extended@file:patches/hugo-extended-0.170.0.tgz": true
+   minimumReleaseAge: 1440
    minimumReleaseAgeExclude:
      - "@gethinode/*"
    ```
 
-5. Restore PostCSS compatibility. Hugo needs an npm-format `postcss` bin shim, which pnpm does not create. Add `cmd-shim` and a postinstall step:
-
-   ```bash
-   pnpm add -D cmd-shim
-   ```
+4. Restore PostCSS compatibility. Hugo needs an npm-format `postcss` bin shim, which pnpm does not create.
 
    Create `scripts/fix-postcss-bin.cjs`:
 
@@ -124,21 +117,24 @@ This template uses **npm** by default. If you prefer [pnpm](https://pnpm.io) —
 
    Then add to your `package.json` scripts: `"postinstall": "node scripts/fix-postcss-bin.cjs"`.
 
-6. Install and build:
+5. Install and build:
 
    ```bash
-   pnpm install
+   pnpm add -D --lockfile-only cmd-shim
+   pnpm install --frozen-lockfile
    pnpm run build
    ```
 
-If you use the bundled GitHub Actions workflows, update them to use pnpm as well — replace the `npm ci`/`npm i` install steps with `pnpm install` (which runs the `postinstall` shim above).
+For the bundled GitHub Actions workflows, set up pnpm before enabling the pnpm cache, use `pnpm-lock.yaml` as the cache dependency path, and replace each npm install step with `pnpm install --frozen-lockfile`.
 
 <!-- MARKDOWN LINKS -->
+[dartsass]: https://sass-lang.com/install/
 [docs]: https://gethinode.com/docs
 [git_download]: https://git-scm.com
 [golang_download]: https://go.dev/dl/
 [hugo]: https://gohugo.io
 [hugo_modules]: https://gohugo.io/hugo-modules/
+[hugo_wrapper_patch]: patches/README.md
 [npm]: https://www.npmjs.com
 [nodejs]: https://nodejs.org
 [repository]: https://github.com/gethinode/hinode.git
