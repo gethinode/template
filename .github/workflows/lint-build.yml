@@ -93,7 +93,15 @@ jobs:
             | tar -xz -C "$HOME"
           echo "$HOME/dart-sass" >> $GITHUB_PATH
         elif [ "$RUNNER_OS" == "Windows" ]; then
-          choco install sass
+          sass_arch=x64
+          if [ "$RUNNER_ARCH" = "ARM64" ]; then
+            sass_arch=arm64
+          fi
+          sass_dir=$(mktemp -d)
+          curl -fsSL --retry 3 "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-windows-${sass_arch}.zip" \
+            -o "$sass_dir/dart-sass.zip"
+          unzip -q "$sass_dir/dart-sass.zip" -d "$sass_dir"
+          cygpath -w "$sass_dir/dart-sass" >> "$GITHUB_PATH"
         fi
       shell: bash
 
